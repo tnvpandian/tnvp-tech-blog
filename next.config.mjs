@@ -30,7 +30,7 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
 ]
 
-const output = process.env.EXPORT ? 'export' : undefined
+const output = 'export'
 const basePath = process.env.BASE_PATH || undefined
 const unoptimized = process.env.UNOPTIMIZED ? true : undefined
 
