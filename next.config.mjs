@@ -71,5 +71,5 @@ const baseConfig = {
 }
 
 // Export the config using plugin chaining
-export default [withContentlayer, withBundleAnalyzer].reduce((acc, fn) => fn(acc), baseConfig, output='export', basePath, unoptimized)
+export default [withContentlayer, withBundleAnalyzer].reduce((acc, fn) => fn(acc), baseConfig)
 
