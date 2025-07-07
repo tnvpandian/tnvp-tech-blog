@@ -1,0 +1,36 @@
+---
+title: 'Design Patterns: An Overview'
+date: '2025-07-05'
+lastmod: '2025-07-05'
+tags: ['fullstack', 'architecture', 'guide', 'designpatterns']
+draft: true
+summary: 'Design Patterns: Overview of commonly used design patterns and practical usage of them'
+images: ['/static/images/twitter-card.png']
+---
+
+## Introduction
+
+“A design that doesn’t take change into account risks major redesign in the future.”― Erich Gamma,
+Design Patterns: Elements of Reusable Object-Oriented Software List of Popular Design Patterns used in Software Development
+
+<TOCInline toc={props.toc} exclude="Introduction" />
+
+## Repository Pattern
+
+The Repository Pattern acts as a mediator between the domain and data mapping layers, offering a collection-like interface for accessing domain objects.
+
+## Circuit Breaker Pattern
+
+The Circuit Breaker Pattern is a resilience design pattern that prevents an application from repeatedly trying to execute an operation that's likely to fail (e.g., a downstream service). It "trips" after a threshold of failures and temporarily blocks further calls, allowing time for recovery. This helps maintain system stability and avoid cascading failures.
+
+## Side Car Pattern
+
+The Sidecar Pattern is a microservices design pattern where a supporting component (the "sidecar") runs alongside the main service in the same environment, often as a separate container or process. It handles auxiliary tasks like logging, proxying, monitoring, or configuration without modifying the core application.
+
+## Factory Pattern
+
+The Factory Pattern is a creational design pattern that provides an interface or method to create objects in a superclass, but allows subclasses or implementations to alter the type of objects that will be created.
+
+## Singleton Pattern
+
+The Singleton Pattern ensures a class has only one instance and provides a global point of access to it. It's commonly used for shared resources like configuration, logging, or database connections to maintain consistent state across an application.
