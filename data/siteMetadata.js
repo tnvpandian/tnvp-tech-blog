@@ -3,6 +3,8 @@ const siteMetadata = {
   title: 'TNVP Technical Blog',
   author: 'Natarajaveerapandian T',
   headerTitle: 'TNVP Technical Blog',
+  slogan: 'Tech Talk That Ticks',
+  tagLine: 'Technology News Via Perspective',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
