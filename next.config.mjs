@@ -1,7 +1,6 @@
 import { withContentlayer } from 'next-contentlayer2'
 import bundleAnalyzer from '@next/bundle-analyzer'
 
-
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -70,4 +69,3 @@ const baseConfig = {
 
 // Export the config using plugin chaining
 export default [withContentlayer, withBundleAnalyzer].reduce((acc, fn) => fn(acc), baseConfig)
-
